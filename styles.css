@@ -21,41 +21,38 @@ header {
   text-align: center;
 }
 
-/* Header Content (Profile Image + Name) */
 .header-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px; /* Space between image and text */
+  gap: 15px;
 }
 
 .header-container h1 {
   font-size: 1.8rem;
 }
 
-/* Small Profile Image in Header */
 .header-pic {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top center;
   border: 2px solid #fff;
 }
 
 /* Navigation */
-nav .nav-links {
+.nav-links {
   list-style: none;
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
 
-nav .nav-links li {
+.nav-links li {
   margin: 0 15px;
 }
 
-nav .nav-links li a {
+.nav-links li a {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
@@ -65,90 +62,55 @@ nav .nav-links li a {
   color: #ff6347;
 }
 
-/* About Section - Flexbox Layout */
+/* Sections */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* About Section */
 .about-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  gap: 30px; /* Space between image and text */
 }
 
-/* Profile Image Styling */
+.about-content {
+  text-align: left;
+  flex: 1;
+}
+
 .profile-pic {
-  width: 180px;
-  height: 180px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top center;
-  border: 4px solid #333;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 3px solid #333;
 }
 
-/* Text Content */
-.about-content {
-  flex: 1;
+/* Education & Certifications */
+.education-item, .certifications-container ul {
   text-align: left;
+  max-width: 700px;
+  margin: 20px auto;
 }
 
-.about-content h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+.education-item h3, .certifications-container li {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.about-content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+/* Contact */
+#contact a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-/* Skills Section */
-#skills ul {
-  list-style: none;
-  padding: 0;
-}
-
-#skills li {
-  margin-bottom: 10px;
-}
-
-/* Experience Section */
-.experience-item {
-  margin-bottom: 30px;
-}
-
-.experience-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.experience-item ul {
-  text-align: left;
-  padding-left: 20px;
-}
-
-/* Projects Section */
-#projects {
-  background: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.project-card {
-  background: #e3e3e3;
-  padding: 20px;
-  width: 45%;
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Section */
-#contact {
-  background: #fff;
+#contact a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -162,22 +124,9 @@ footer {
   bottom: 0;
 }
 
-footer p {
-  font-size: 0.9rem;
-}
-
-/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .profile-pic {
-    margin-bottom: 15px;
-  }
-
-  .about-content {
     text-align: center;
   }
 
@@ -188,9 +137,5 @@ footer p {
   .header-pic {
     width: 40px;
     height: 40px;
-  }
-
-  .project-card {
-    width: 90%;
   }
 }
