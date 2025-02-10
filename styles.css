@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navigation */
+/* Header */
 header {
   background: #333;
   color: #fff;
@@ -21,6 +21,29 @@ header {
   text-align: center;
 }
 
+/* Header Content (Profile Image + Name) */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Space between image and text */
+}
+
+.header-container h1 {
+  font-size: 1.8rem;
+}
+
+/* Small Profile Image in Header */
+.header-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 2px solid #fff;
+}
+
+/* Navigation */
 nav .nav-links {
   list-style: none;
   display: flex;
@@ -40,12 +63,6 @@ nav .nav-links li a {
 
 .nav-links li a:hover {
   color: #ff6347;
-}
-
-/* Sections */
-.section {
-  padding: 50px 20px;
-  text-align: center;
 }
 
 /* About Section - Flexbox Layout */
@@ -72,7 +89,7 @@ nav .nav-links li a {
 
 /* Text Content */
 .about-content {
-  flex: 1; /* Takes remaining space */
+  flex: 1;
   text-align: left;
 }
 
@@ -162,6 +179,15 @@ footer p {
 
   .about-content {
     text-align: center;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header-pic {
+    width: 40px;
+    height: 40px;
   }
 
   .project-card {
