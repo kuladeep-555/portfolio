@@ -91,6 +91,43 @@ header {
   border: 3px solid #333;
 }
 
+/* Skills Section */
+#skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#skills ul {
+  list-style: none;
+  text-align: left;
+  max-width: 500px;
+}
+
+#skills li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Experience Section */
+.experience-item h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.experience-item ul {
+  list-style: none;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.experience-item li {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
 /* Education & Certifications */
 .education-item, .certifications-container ul {
   text-align: left;
@@ -103,7 +140,12 @@ header {
   font-weight: bold;
 }
 
-/* Contact */
+.certifications-container li {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* Contact Section */
 #contact a {
   color: #007bff;
   text-decoration: none;
@@ -124,6 +166,7 @@ footer {
   bottom: 0;
 }
 
+/* Media Query for Mobile Responsiveness */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
@@ -137,5 +180,18 @@ footer {
   .header-pic {
     width: 40px;
     height: 40px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  #skills ul {
+    font-size: 1rem;
+  }
+
+  .experience-item ul, .education-item ul, .certifications-container ul {
+    text-align: center;
   }
 }
