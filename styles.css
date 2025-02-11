@@ -3,208 +3,144 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
   scroll-behavior: smooth;
 }
 
+/* Body */
 body {
-  font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   color: #333;
-  line-height: 1.6;
+  text-align: center;
 }
 
-/* Header Styling */
+/* Header */
 header {
-  background: #333;
-  color: #fff;
-  padding: 20px 0;
+  background: #222;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
 .header-container h1 {
   font-size: 2rem;
-  margin: 0;
 }
 
 .header-pic {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #fff;
 }
 
-/* Navigation Styling */
+/* Navigation */
 .nav-links {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 15px;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .nav-links li a {
+  color: white;
   text-decoration: none;
-  color: #fff;
-  font-size: 1.1rem;
-  transition: color 0.3s;
+  font-size: 1.2rem;
 }
 
 .nav-links li a:hover {
   color: #ff6347;
 }
 
-/* Section Styling */
+/* Sections */
 .section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.section-content {
+  padding: 50px 20px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* About Section */
-#about p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
-.profile-pic-large {
-  width: 150px;
-  height: 150px;
+.profile-pic {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #333;
-  margin-top: 20px;
 }
 
-/* Skills Section */
-.skills-list {
-  list-style: none;
-  margin: 20px auto;
+.about-text {
+  max-width: 500px;
   text-align: left;
+}
+
+/* Skills */
+.skills-container ul {
+  list-style: none;
+  text-align: left;
+  margin: auto;
   max-width: 500px;
 }
 
-.skills-list li {
-  font-size: 1.1rem;
-  margin: 10px 0;
-}
-
-/* Experience Section */
-.experience-item {
+/* Experience */
+.experience-container {
   text-align: left;
-  margin: 20px auto;
-  max-width: 800px;
+  max-width: 700px;
+  margin: auto;
 }
 
-.experience-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.duration {
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-.experience-item ul {
-  list-style: disc;
-  margin-left: 20px;
-}
-
-/* Education Section */
+/* Education */
 .education-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  text-align: center;
 }
 
-.education-item {
-  text-align: left;
-  max-width: 400px;
-}
-
-.education-item h3 {
-  font-size: 1.3rem;
-  margin-bottom: 8px;
-}
-
-.education-item p {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-}
-
-/* Certifications Section */
-.certifications-list {
+/* Certifications */
+#certifications ul {
   list-style: none;
-  margin: 20px auto;
-  text-align: left;
   max-width: 500px;
+  margin: auto;
+  text-align: left;
 }
 
-.certifications-list li {
-  font-size: 1.1rem;
-  margin: 10px 0;
-}
-
-/* Contact Section */
-#contact p {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
+/* Contact */
 #contact a {
   color: #007bff;
   text-decoration: none;
 }
 
-#contact a:hover {
-  text-decoration: underline;
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 10px;
+  background: #222;
+  color: white;
+  padding: 20px;
   margin-top: 50px;
 }
 
-/* Media Queries for Responsiveness */
+/* Responsive */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
   }
   
-  .nav-links {
+  .about-container {
     flex-direction: column;
-    gap: 10px;
+    text-align: center;
   }
   
-  .education-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .header-pic {
-    width: 45px;
-    height: 45px;
-  }
-  
-  .profile-pic-large {
-    width: 130px;
-    height: 130px;
+  .profile-pic {
+    width: 100px;
+    height: 100px;
   }
 }
