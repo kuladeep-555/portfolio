@@ -5,25 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kuladeep Vankadara - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    };
+  </script>
 </head>
 <body>
   <!-- Header Section -->
-  <header>
+
+  <header class="header-content">
+    <div class="sub-1">
+    <h2 class="name">Kuladeep Vankadara</h2>
     <div class="header-container">
-      <h1>Kuladeep Vankadara</h1>
-      <img src="profile.jpg" alt="Kuladeep Vankadara" class="header-pic">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  </div>
+    <img src="profile.jpg" alt="Kuladeep Vankadara" class="header-pic">
+</header>
+
+
 
   <!-- About Section -->
   <section id="about" class="section">
@@ -110,7 +120,6 @@
 
     </div>
   </section>
-
   <!-- Footer -->
   <footer>
     <p>© 2025 Kuladeep Vankadara. All Rights Reserved.</p>
